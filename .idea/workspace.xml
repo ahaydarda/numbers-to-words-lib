@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5ab9378-2dbe-4712-9567-867c85a4e6ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/consts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/converters.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/words/Ilanguage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/words/english.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/words/english.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/words/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/blah.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595268837701</updated>
-      <workItem from="1595268839511" duration="568000" />
+      <workItem from="1595268839511" duration="26943000" />
     </task>
     <servers />
   </component>
@@ -50,5 +59,23 @@
         <option value="$PROJECT_DIR$/node_modules" />
       </list>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="435" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595329019579">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="435" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1595329019579" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595346704590">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1595346704590" />
+    <state x="378" y="207" width="683" height="486" key="find.popup" timestamp="1595342680294">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1595342680294" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1595345853977">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1595345853977" />
   </component>
 </project>
