@@ -1,1 +1,1 @@
-export { English}  from './english';
+export { English } from './english';
