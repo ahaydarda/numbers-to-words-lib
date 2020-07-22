@@ -12,7 +12,8 @@ export interface INumbersToWordsFunc {
 }
 ```
 
-###Supported Languages
+##Supported Languages
+Flags:
 * EN : English
 * ?
 
