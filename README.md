@@ -1,5 +1,5 @@
 # numbers-to-words-lib
-A small library to convert numbers in numerical format into words in a languages.
+A small library to convert numbers in numerical format into words in a language.
 
 It exposes ```INumbersToWordsFunc``` interface implementation which accepts a number value 
 and optional language flag (by default it is English)
