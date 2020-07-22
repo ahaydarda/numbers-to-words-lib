@@ -1,9 +1,6 @@
 import { English } from './english';
 
 const english = new English();
-test('converts basic numbers', () => {
-  //expect(convert(10022)).toBe("ten thousand and twenty-two");
-});
 
 test('converts basic numbers', () => {
   expect(english.convert(1)).toBe('one');

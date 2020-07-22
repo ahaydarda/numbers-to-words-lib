@@ -61,7 +61,7 @@ export class English implements ILanguage {
     );
   }
 
-  joiner(firstPart: number, secondPart: number) {
+  protected joiner(firstPart: number, secondPart: number) {
     const first = firstPart.toString().length;
     const second = secondPart.toString().length;
     if (first === 2 && second === 1) {
@@ -75,23 +75,24 @@ export class English implements ILanguage {
     }
   }
 
-  // @ts-ignore
-  convert(value: number, exact = false) {
+  convert(value: number, explicitOne = false): string {
     if (this.numberToWordMap.has(value.toString())) {
-      const oneUnit = exact && value >= 100 && value % 100 === 0 ? 'one ' : '';
+      const oneUnit =
+        explicitOne && value >= 100 && value % 100 === 0 ? 'one ' : '';
       return `${oneUnit}${this.numberToWordMap.get(
         value.toString()
       ) as string}`;
     } else {
       const length = value.toString().length;
-      const zeros = length - 1;
-      const tens = Math.pow(10, zeros <= 3 ? zeros : zeros - (zeros % 3));
-      const full = value - (value % tens);
+      const digit = length - 1;
+      const tens = Math.pow(10, digit <= 3 ? digit : digit - (digit % 3));
+      const multipleOfTensValue = value - (value % tens);
       const residual = value % tens;
-      return residual === 0
+      const isMultipleOfTens = residual === 0;
+      return isMultipleOfTens
         ? `${this.convert(Math.floor(value / tens))} ${this.convert(tens)}`
-        : `${this.convert(full, true)}${this.joiner(
-            full,
+        : `${this.convert(multipleOfTensValue, true)}${this.joiner(
+            multipleOfTensValue,
             residual
           )}${this.convert(residual)}`;
     }
