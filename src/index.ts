@@ -8,10 +8,10 @@ export interface INumbersToWordsFunc {
 
 export const numbersToWords: INumbersToWordsFunc = (
   value: number,
-  language: string = LANGUAGES.En
+  language: string = LANGUAGES.EN
 ) => {
-  if (!converters.has(language)) {
+  if (!converters.has(language.toLowerCase())) {
     throw Error(`does not support language ${language}`);
   }
-  return (converters.get(language) as ILanguage).convert(value);
+  return (converters.get(language.toLowerCase()) as ILanguage).convert(value);
 };

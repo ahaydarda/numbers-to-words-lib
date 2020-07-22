@@ -1,4 +1,5 @@
 import { numbersToWords } from './index';
+import { LANGUAGES } from './consts';
 
 test('converts numbers to english by default', () => {
   expect(numbersToWords(1536)).toBe(
@@ -9,6 +10,12 @@ test('converts numbers to english by default', () => {
   );
   expect(numbersToWords(120005)).toBe(
     'one hundred and twenty thousand and five'
+  );
+});
+
+test('it works with a language flag t00', () => {
+  expect(numbersToWords(1536, LANGUAGES.EN)).toBe(
+    'one thousand, five hundred and thirty-six'
   );
 });
 

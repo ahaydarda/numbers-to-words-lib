@@ -3,7 +3,7 @@ import { LANGUAGES } from '../consts';
 
 export class English implements ILanguage {
   readonly numberToWordMap: Map<string, string>;
-  readonly name: string = LANGUAGES.En;
+  readonly name: string = LANGUAGES.EN;
 
   constructor() {
     this.numberToWordMap = new Map<string, string>();
