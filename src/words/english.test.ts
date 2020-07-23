@@ -53,6 +53,7 @@ test('converts thousands', () => {
   );
   expect(english.convert(10043)).toBe('ten thousand and forty-three');
   expect(english.convert(67000)).toBe('sixty-seven thousand');
+  expect(english.convert(12073)).toBe('twelve thousand and seventy-three');
 });
 
 test('converts large numbers', () => {
@@ -71,5 +72,9 @@ test('converts large numbers', () => {
 
   expect(english.convert(1000010000023)).toBe(
     'one trillion, ten million and twenty-three'
+  );
+
+  expect(english.convert(342876288)).toBe(
+    'three hundred and forty-two million, eight hundred and seventy-six thousand, two hundred and eighty-eight'
   );
 });
